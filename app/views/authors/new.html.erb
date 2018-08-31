@@ -2,7 +2,7 @@
 <%= form_tag authors_path, method: "post" do %>
 
 <% if @author.errors.any? %>
-
+  <div id="Error explanation"
 
   <% if @author.errors[:name].empty? %>
       <div class="field">
