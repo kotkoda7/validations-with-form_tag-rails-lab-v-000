@@ -9,9 +9,13 @@
           <%= message %>
         </li>
     </ul>
-    
   </div>
+  <% end %>
+  
+  <% if @post.error[:title].empty %>
   <div class="field">
+    <% else %>
+    <div class="field_with_errors"
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
   </div>
