@@ -30,6 +30,7 @@ class AuthorsController < ApplicationController
       render :edit
     end
   end
+end
 
   private
 
