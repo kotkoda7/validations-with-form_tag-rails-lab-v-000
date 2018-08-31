@@ -2,9 +2,9 @@
 <%= form_tag authors_path, method: "post" do %>
 
   <% if @author.errors[:name].empty? %>
-  <div class="field">
+      <div class="field">
     <% else %>
-  <div class="field_with_errors">
+      <div class="field_with_errors">
     <% end %>
     <%= label_tag "name", "Name" %>
     <%= text_field_tag "name" %>
