@@ -15,22 +15,7 @@ class AuthorsController < ApplicationController
     else
       render :new
   end
-  
-  def edit
-    @author = Author.find(params[:id])
-  end
-  
-  def update
-    @author = Author.find(params[:id])
-    
-    @author.update(author_params)
-    
-     if @author.update(post_params)
-      redirect_to author_path(@author)
-      
-    else
-      render :edit
-    end
+
   end
   
 
