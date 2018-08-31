@@ -10,9 +10,11 @@
     <%= text_field_tag "name", @author.name %>
   </div>
 
+<% if @author.errors[:name].empty? %>
   <div class="field">
+  <% else %>
     <%= label_tag "email", "Email" %>
-    <%= text_field_tag "email" %>
+    <%= text_field_tag "email", @author.email %>
   </div>
 
   <div class="field">
