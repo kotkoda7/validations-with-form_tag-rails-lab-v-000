@@ -3,6 +3,7 @@
 
   <% if @author.errors[:name].empty? %>
   <div class="field">
+    <% else %>
     <%= label_tag "name", "Name" %>
     <%= text_field_tag "name" %>
   </div>
