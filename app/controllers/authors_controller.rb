@@ -15,12 +15,6 @@ class AuthorsController < ApplicationController
     else
       render :new
   end
-  
-  def edit
-  end
-
-  def update
-  end
 
   private
 
