@@ -7,9 +7,10 @@
     <ul>
       <% @author.errors.full_messages.each do |meassage| %>
       <li><%= message %> </li>
-      
+      <% end %>
     </ul>
   </div>
+  <% end %>
 
   <% if @author.errors[:name].empty? %>
       <div class="field">
