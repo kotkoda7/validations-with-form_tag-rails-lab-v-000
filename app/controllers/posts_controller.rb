@@ -6,6 +6,10 @@ class PostsController < ApplicationController
   def edit
     @post = Post.find(params[:id])
   end
+  
+  def new
+    @author = Author.new
+  end
 
   def update
     @post = Post.find(params[:id])
