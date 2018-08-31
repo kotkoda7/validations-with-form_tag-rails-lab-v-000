@@ -35,6 +35,7 @@
     </p>
   </div>
 
+ <% if @post.errors[:content].empty? %>
   <div class="field">
     <%= label_tag "content", "Content" %>
     <br />
